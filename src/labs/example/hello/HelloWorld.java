@@ -5,11 +5,12 @@ Date: 1/21/26
 
 note: This program should reside in the directory pat has follows-> CSC_151_LeviLynch
 */
+package labs.example.hello;
 
-public class HelloWorld{
+public class HelloWorld
+{
     public static void main (String[] args)
     {
-        System.out.println("Hellow World");
+        System.out.println("Hello World");
     }
 }
-
