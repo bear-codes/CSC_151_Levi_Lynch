@@ -4,7 +4,7 @@ Levi Lynch
 
 */
 
-package src.labs.example.mammal;
+package labs.example.mammal;
 
 public class Main {
 
