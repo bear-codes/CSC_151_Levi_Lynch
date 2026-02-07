@@ -53,4 +53,18 @@ public class Mammal {
     public void sleep() {
         System.out.println("The mammal is sleeping.");
     }
+
+    public int walk() {
+    int south = 3;
+    int east = 4;
+
+    // Pythagorus theorem 
+    double distance = Math.sqrt(Math.pow(south, 2) + Math.pow(east, 2));
+
+    System.out.println("The mammal walked 3 miles south, then 4 miles east.");
+    System.out.println("Straight-line distance from start: " + distance + " miles");
+
+    return (int) distance; // returns 5
+}
+
 }
