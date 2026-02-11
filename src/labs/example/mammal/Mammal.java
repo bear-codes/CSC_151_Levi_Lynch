@@ -7,6 +7,22 @@ public class Mammal {
     protected String eyeColor;
     protected String habitat;
 
+
+
+    public Mammal() {
+    }
+    
+
+    private String name;
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
     // Constructor (initializes properties)
     public Mammal(String hairColor, String eyeColor, String habitat) {
         this.hairColor = hairColor;
@@ -53,6 +69,11 @@ public class Mammal {
     public void sleep() {
         System.out.println("The mammal is sleeping.");
     }
+
+
+
+
+    //Week 4 - Lab Addition
 
     public int walk() {
     int south = 3;

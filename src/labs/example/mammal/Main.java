@@ -10,14 +10,15 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Mammal mammal = new Mammal(
-                "Brown",
-                "Hazel",
-                "Domestic Household"
-        );
+        Dog dog = new Dog();
 
-        mammal.getMammalDetails();
-        mammal.sit();
+        dog.setName("Buddy");
+
+        System.out.println(dog.getName());
+
+        dog.eat();
+        dog.sleep();
+        dog.bark();  // Only Dog can do this
     }
 }
 
