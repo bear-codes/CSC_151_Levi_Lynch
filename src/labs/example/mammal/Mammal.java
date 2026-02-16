@@ -88,4 +88,17 @@ public class Mammal {
     return (int) distance; // returns 5
 }
 
+public double  getAngle{
+
+
+    double angleRadians;
+    double angleDeg; 
+
+    angleRadians =math.atan2(3,4)
+    angleDeg = (angleRadians * 100)/ Math.PI;
+
+    return angleDeg;
+
+}
+
 }

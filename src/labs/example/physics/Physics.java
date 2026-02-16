@@ -53,4 +53,38 @@ public class Physics {
         double potentialEnergy = mass * gravity * height;
         return potentialEnergy;
     }
+
+    public double logInvalidAngleInfo()
+    {
+        System.out.println("logging the angle... "angleDeg" is not a right angle")
+    }
+
+    public double logValidAngleInfo(){
+        System.out.println("logging the angle "angleDeg" degrees... This is a valid 3-4-5 triangle")
+    }
+
+    public double getAngle{
+
+
+    double angleRadians;
+    double angleDeg; 
+
+    angleRadians = math.atan2(3,4)
+    angleDeg = (angleRadians * 100)/ Math.PI;
+
+    if angleDeg > 37{
+        logInvalidAngleInfo()
+    }
+
+    if angleDeg < 36.87{
+        logInvalidAngleInfo()
+    }
+
+    else{
+        logValidAngleInfo()
+    }
+
+    return angleDeg;
+
+}
 }
