@@ -71,5 +71,7 @@ public class Physics {
         angleRadians = Math.atan2(3, 4);
         angleDeg = (angleRadians * 180) / 3.1415;
 
+        return angleDeg;
+
 }
 }

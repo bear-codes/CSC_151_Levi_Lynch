@@ -2,6 +2,9 @@
 Levi Lynch
 2/9/26
 
+
+javac -d bin src/labs/example/physics/*.java  
+java -cp bin labs.example.physics/Main
 */
 
 package labs.example.physics;
