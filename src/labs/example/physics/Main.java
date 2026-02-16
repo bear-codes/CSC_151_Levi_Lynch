@@ -19,7 +19,18 @@ public class Main {
         double work = physics.getWork(force, 20);
         double kineticEnergy = physics.getKineticEnergy(10, velocity);
         double potentialEnergy = physics.getPotentialEnergy(10, 9.8, 15); 
+
+
+
+        
+
+
+
+
+
 // calling each method
+
+
         System.out.println("Velocity: " + velocity + " m/s");
         System.out.println("Momentum: " + momentum + " kg·m/s");
         System.out.println("Force: " + force + " N");
@@ -27,5 +38,19 @@ public class Main {
         System.out.println("Kinetic Energy: " + kineticEnergy + " J");
         System.out.println("Potential Energy: " + potentialEnergy + " J");
 //print return value from the Main Class with the proper units 
+
+
+
+//Week 6 lab:
+double angle = physics.getAngle();
+
+        // Check if angle is outside valid range
+        if (angle > 37 || angle < 36.87) {
+            physics.logInvalidAngleInfo(angle);
+        } else {
+            physics.logValidAngleInfo(angle);
+        }
     }
 }
+
+

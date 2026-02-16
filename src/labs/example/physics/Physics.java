@@ -54,37 +54,22 @@ public class Physics {
         return potentialEnergy;
     }
 
-    public double logInvalidAngleInfo()
-    {
-        System.out.println("logging the angle... "angleDeg" is not a right angle")
+   public void logInvalidAngleInfo(double angleDeg) {
+        System.out.println("Logging the angle... " + angleDeg 
+                + " degrees. This is not a right angle.");}
+
+    public void logValidAngleInfo(double angleDeg) {
+        System.out.println("Logging the angle... " + angleDeg 
+                + " degrees. This is a valid 3-4-5 triangle.");
     }
 
-    public double logValidAngleInfo(){
-        System.out.println("logging the angle "angleDeg" degrees... This is a valid 3-4-5 triangle")
-    }
+    public double getAngle() {
 
-    public double getAngle{
+        double angleRadians;
+        double angleDeg;
 
-
-    double angleRadians;
-    double angleDeg; 
-
-    angleRadians = math.atan2(3,4)
-    angleDeg = (angleRadians * 100)/ Math.PI;
-
-    if angleDeg > 37{
-        logInvalidAngleInfo()
-    }
-
-    if angleDeg < 36.87{
-        logInvalidAngleInfo()
-    }
-
-    else{
-        logValidAngleInfo()
-    }
-
-    return angleDeg;
+        angleRadians = Math.atan2(3, 4);
+        angleDeg = (angleRadians * 180) / 3.1415;
 
 }
 }
