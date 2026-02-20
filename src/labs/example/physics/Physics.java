@@ -74,4 +74,23 @@ public class Physics {
         return angleDeg;
 
 }
+    public double getLightSpeedInMPH() {
+            double lightSpeedMilesPerSecond = 186_282;
+            return lightSpeedMilesPerSecond * 3600;
+        }
+
+        // Time (in hours) for light to travel from Sun to Earth
+        public double getTimeFromSunToEarthInHours() {
+            return getKnownDistanceToEarth() / getLightSpeedInMPH();
+        }
+
+        // Known distance from Sun to Earth (miles)
+        public double getKnownDistanceToEarth() {
+            return 92_947_266.72;
+        }
+
+        // Logs invalid distance message
+        public void logEarthToSunInvalidDistance() {
+            System.out.println("ERROR: Calculated distance from the Sun to the Earth is INVALID.");
+        }
 }

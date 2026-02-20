@@ -53,6 +53,29 @@ double angle = physics.getAngle();
         } else {
             physics.logValidAngleInfo(angle);
         }
+
+        // Get velocity and time from Physics class
+        
+        double time = physics.getTimeFromSunToEarthInHours();
+
+        // Call getDistance() using velocity and time
+        double calculatedDistance = physics.getDistance(velocity, time);
+
+        // Known correct distance
+        double knownDistance = physics.getKnownDistanceToEarth();
+
+        // Output values
+        System.out.println("Velocity (mph): " + velocity);
+        System.out.println("Time (hours): " + time);
+        System.out.println("Calculated Distance (miles): " + calculatedDistance);
+        System.out.println("Known Distance (miles): " + knownDistance);
+
+        // Validate result
+        if (Math.abs(calculatedDistance - knownDistance) < 0.01) {
+            System.out.println("Distance calculation is VALID.");
+        } else {
+            physics.logEarthToSunInvalidDistance();
+        }
     }
 }
 
